@@ -18,10 +18,8 @@ chmod +x ./kube-apiserver
 Install Docker
 
 ```
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-sudo apt update
-sudo apt install docker.ce=17.12.0~ce-0~ubuntu -y
+curl -fsSL get.docker.com -o /tmp/get-docker.sh
+sudo sh /tmp/get-docker.sh
 ```
 
 Launch etcd instance
